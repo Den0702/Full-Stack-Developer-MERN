@@ -1,0 +1,14 @@
+* {
+  background-color: #808080;
+}
+
+div {
+  height: 90px;
+  width: 90px;
+  background-color: #fea500;
+  margin: 0 0 10px 20px;
+}
+
+h2 {
+  color: white;
+}
