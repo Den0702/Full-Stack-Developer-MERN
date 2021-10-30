@@ -13,6 +13,7 @@ select,
 textarea {
   background-color: #2b4a64;
   margin-bottom: 0.5em;
+  color: #ffffff;
   border: none;
   padding: 5px;
   width: 50%;
