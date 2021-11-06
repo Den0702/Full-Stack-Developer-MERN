@@ -3,6 +3,8 @@ div {
   height: 150px;
   margin: auto;
   margin-bottom: 15px;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 div:first-child {
@@ -12,8 +14,6 @@ div:first-child {
 div:first-child:hover {
   width: 300px;
   transition-property: width;
-  transition-duration: 1s;
-  transition-timing-function: linear;
 }
 
 div:nth-child(2) {
@@ -23,8 +23,6 @@ div:nth-child(2) {
 div:nth-child(2):hover {
   height: 300px;
   transition-property: height;
-  transition-duration: 1s;
-  transition-timing-function: linear;
 }
 
 div:last-child {
@@ -35,6 +33,4 @@ div:last-child:hover {
   height: 300px;
   width: 300px;
   transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: linear;
 } 
