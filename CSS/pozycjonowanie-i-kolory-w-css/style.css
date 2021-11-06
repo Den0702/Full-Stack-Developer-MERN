@@ -1,0 +1,87 @@
+.outer {
+  display: flex;
+  width: 310px;
+  height: 310px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+ /* W taki sposób udało się 
+ wyśrodkować kółka automatycznie 
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+/* Nie wiem jak bez
+ręcznego wyliczenia współrzędnych
+wykorzystując pozycjonowanie wyśrodkować 
+kółka */
+.circle {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;/* Wyliczyłem ręcznie */
+  left: 30px;
+}
+
+.box.red {
+  background-color: red;
+}
+.box.blue {
+  background-color: blue;
+}
+.box.green {
+  background-color: green;
+}
+.box.yellow {
+  background-color: yellow;
+}
+.box.black {
+  background-color: black;
+}
+.box.orange {
+  background-color: orange;
+}
+.box.purple {
+  background-color: purple;
+}
+.box.gray {
+  background-color: gray;
+}
+.box.pink {
+  background-color: pink;
+}
+
+.circle.pink {
+  background-color: pink;
+}
+.circle.gray {
+  background-color: gray;
+}
+.circle.purple {
+  background-color: purple;
+}
+.circle.green {
+  background-color: green;
+}
+.circle.red {
+  background-color: red;
+}
+.circle.blue {
+  background-color: blue;
+}
+.circle.orange {
+  background-color: orange;
+}
+.circle.yellow {
+  background-color: yellow;
+}
+.circle.black {
+  background-color: black;
+}
