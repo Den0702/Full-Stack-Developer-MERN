@@ -1,3 +1,18 @@
+/* Normalizacja */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;  
+}
+textarea {
+  overflow: auto;/* to stop IE showing a scrollbar when there is no need for one */
+}
+
 /* Tlo */
 form {
   background-color: #213b50;
