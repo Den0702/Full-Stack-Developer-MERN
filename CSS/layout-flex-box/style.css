@@ -1,0 +1,47 @@
+body {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header, main, aside, footer {
+  padding: 10px 5px;
+  flex-basis: 100%;/* W tym przypadku jest to ~ width: 100% */
+}
+
+header {
+  background-color: red;
+}
+
+main {
+  background-color: blue;
+}
+
+footer {
+  background-color: violet;
+}
+
+.left {
+  background-color: green;
+}
+
+.right {
+  background-color: pink;
+}
+
+.left,
+.right {
+  /*height: 50%; Nie dzialaja procenty */
+  height: 10em;
+}
+
+@media screen and (min-width:768px) {
+  main {
+    flex: 3;
+  }
+  .right {
+    flex: 1;
+  }
+}
