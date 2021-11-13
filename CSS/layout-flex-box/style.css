@@ -45,7 +45,10 @@ footer {
     flex: 3;
   }
 
-  .left,
+  .left {
+    height: 10em;
+  }
+  
   .right {
     height: auto;
   }
