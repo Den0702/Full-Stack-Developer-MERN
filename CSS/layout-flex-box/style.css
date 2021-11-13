@@ -33,15 +33,59 @@ footer {
 
 .left,
 .right {
-  /*height: 50%; Nie dzialaja procenty */
-  height: 10em;
+  /*height: 50%; Nie dzialaja procenty 
+  -procenty beda dzialac, jesli jest element-
+  rodzic o zafiksowanych rozmiarach*/
+  height: 20em;
 }
 
-@media screen and (min-width:768px) {
+/* Domyslna wartosc order to 0 */
+@media screen and (min-width:768px) and (max-width:992px) {
   main {
     flex: 3;
   }
+
+  .left,
   .right {
+    height: auto;
+  }
+
+  .right {
+    order: 10;
     flex: 1;
   }
+
+  .left {
+    order: 20;
+  }
+
+  footer {
+    order: 30;
+  } 
+}
+
+@media screen and (min-width:993px) {
+  main {
+    order: 1;
+    flex: 2;
+  }
+
+  .left,
+  .right {
+    height: auto;
+  }
+
+  .right {
+    order: 2;
+    flex: 1;
+  }
+
+  .left {
+    flex: 1; 
+  }
+  
+  footer {
+    order: 3;
+  }
+
 }
