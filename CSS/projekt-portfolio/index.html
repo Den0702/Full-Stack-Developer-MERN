@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio page</title>
+  
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+  
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header-content">
+      <h1>frontend developer</h1>
+      <hr>
+      <p>HTML <span>•</span> CSS <span>•</span> JavaScript</p>
+      <a href="#" class="btn">dowiedz sie wiecej</a>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <label for="drop-nav">menu</label>
+    <input type="checkbox" id="drop-nav">
+    <ul>
+      <li class="menu-item"><a href="#about-me">o mnie</a></li>
+      <li class="menu-item"><a href="#portfolio">portfolio</a></li>
+      <li class="menu-item"><a href="#contact">kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section id="about-me" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>o mnie</h2>
+        <hr>
+      </div>
+      <img src="img/about.jpg" alt="Joanna Nowak">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+        excepturi atque eum aperiam vero est non ad ratione dolorem voluptate
+        corrupti aspernatur quo, magnam, sint distinctio, numquam itaque quia
+        quisquam! Reprehenderit veritatis tempora fugit quo ex excepturi magni
+        soluta? Eos fuga, ducimus totam deleniti laudantium deserunt
+        consequuntur.
+      </p>
+      <p>
+        Illo laborum maiores praesentium, aliquam, aspernatur quo dolorum
+        beatae soluta ut assumenda sapiente reprehenderit et alias
+        perspiciatis iste vero veniam ex hic. Est nemo velit magni odit illo
+        quibusdam illum unde sunt eligendi.
+      </p>
+
+      <a href="#" class="btn">moje portfolio</a>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2>portfolio</h2>
+        <hr>
+      </div>
+      <div class="portfolio-images">
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-1.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-2.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-3.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-4.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-5.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-6.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-7.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-8.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-9.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-10.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-11.jpg">
+          <h3>Projekt</h3>
+        </a>
+        <a href="" class="image-item">
+          <img src="img/portfolio/photo-12.jpg">
+          <h3>Projekt</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>kontakt</h2>
+        <hr>
+      </div>
+      <form class="contact-form">
+        <input type="text" id="username" value="Imię" class="form-data">
+        <input type="email"id="usermail" value="Email" class="form-data">
+        <textarea name="message" id="usermessage" cols="30" rows="10">Wiadomość</textarea>
+        <input type="submit" value="wyślij wiadomość" class="btn">
+      </form>
+    </div>
+    <div class="social-media">
+      <a href="" class="social-link"><i class="fab fa-facebook-square"></i></a>
+      <a href="" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Akademia 108 - Szkoła Programowania</p>
+  </footer>
+</body>
+
+</html>

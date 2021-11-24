@@ -1,0 +1,370 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;;
+}
+
+section {
+  padding: 120px 0;
+}
+
+h1, h2 {
+  /* margin: 30em 0 0.67em 0; */
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+}
+
+hr {
+  width: 70px;
+  border: 1px solid #007bff;
+  border-bottom: none;
+}
+
+/* Utility styles*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #007bff;
+  border-radius: 2px;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: auto;
+  padding: 15px 10px;
+  background-color: transparent;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Header styles*/
+.main-header {
+  background-color: #f2f1ed;
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header .main-header-content {
+  text-align: center;
+}
+
+.main-header .main-header-content h1 {
+  font-size: 4.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.main-header .main-header-content p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+}
+
+.section-header {
+  margin-bottom: 75px;
+}
+
+.section-header h2 {
+  text-align: center;
+  font-size: 1.9em;
+  font-weight: 400;
+  color: #333;
+}
+
+
+/* Main menu styles */
+nav.menu {
+  background-color:#007bff;
+  /* margin: auto; */
+  /* position: relative; */
+}
+
+nav.menu label {
+  text-transform: uppercase;
+}
+.menu ul {
+  margin: 0;/* Dlaczego margin auto nie dodaje margin po lewej i prawej,
+  a gore i dol?  - bo blokowy element ul nie ma ograniczonej
+  dlugosci przyjmuje wiec cala dostepna szerokosc ekranu*/
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  /* position: absolute; */
+}
+
+.menu ul .menu-item {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.menu ul .menu-item a {
+  display: inline-block; /* Zeby mozna bylo ustawic padding inline'owemu elementowi "a" */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 10px;
+  transition: all .3s;
+}
+
+li.menu-item a:hover {
+  background-color: #fff;
+  color: #007bff;
+}
+
+.menu label[for="drop-nav"] {
+  display: none;
+}
+
+input[id="drop-nav"] {
+  display: none;
+} 
+/* About section styles */
+.about {
+  text-align: center;
+}
+
+.about p {
+  margin: 4em auto;
+  text-align: left;
+  max-width: 700px;
+  color:#777;
+  line-height: 1.4;
+}
+
+.about img {
+  border-radius: 50%;
+}
+
+
+/* Portfolio section styles */
+#portfolio {
+  background-color: #f2f1ed;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5em 0; 
+}
+
+.portfolio-images .image-item {
+  height: 200px;
+  flex-basis: 25%;
+  position: relative;
+}
+
+.portfolio-images .image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-images .image-item h3 {
+  position: absolute;/* Nakładamy nagłówek powyżej obrazka */
+  top: 0;
+  left: 0;
+  width: 100%;/* Pozwoli ustawic background na wymiary calego kontenera */
+  height: 100%;
+  background-color:  rgba(0, 123, 255, 0.8);
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+  font-size: 3em;
+  margin: 0;
+  opacity: 0;
+  font-weight: 400;
+  transition: background-color /* color */ 1s;
+}
+
+.portfolio-images .image-item h3:hover {
+  opacity: 1;
+}
+
+/* Contact section styles */
+.contact-form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 30px auto 40px auto;
+  max-width: 700px;
+}
+
+.form-data {
+  /* flex: 48%;*//* przy takiej wlasciwosci flexgrow jest 1, czyli default */
+  flex-basis: 48%;/* przy takiej wlasciwosci flexgrow jest 0, czyli initial */
+  padding: 10px 5px;
+  outline: none;
+}
+
+#usermessage {
+  flex-basis: 100%;
+  padding: 10px 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.social-media {
+  margin-top: 40px;
+  text-align: center;
+  /* margin: auto; - nie zadziala, bo elementy wewnatrz tej listy
+  sa elementami liniowymi*/  
+}
+
+.social-media .social-link {
+  font-size: 2em;
+  margin: 0 7px;
+  color: #007bff;
+}
+
+.social-media .social-link:hover {
+  color: #777;
+}
+
+/* Footer styles */
+footer {
+  padding: 10px;
+  background-color: #f2f1ed;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 479px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .portfolio-images .image-item {
+    height: 230px;
+    flex-basis: 100%;
+  }
+
+  .form-data {
+    flex-basis: 100%;
+    padding: 20px 5px;
+    margin-top: 20px;
+    outline: none;
+  }
+
+  .menu label[for="drop-nav"] {
+    display: block;
+    text-align: right;
+    color: #fff;
+    padding: 7px;
+    margin-right: 12px;
+    line-height: 36.781px;
+    font-size: 1.6em;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  input[id="drop-nav"]:checked + ul {
+    display: block;
+  }
+
+  .menu ul .menu-item {
+    display: block;
+    line-height: 2em;
+  }
+
+  .main-header .main-header-content h1 {
+    font-size: 2.9em;
+  }
+
+  .about img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .menu ul .menu-item a {
+    display: block; 
+    text-align: right;
+  }
+
+  .about p {
+    font-size: 85%;
+  }
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+  .container {
+    max-width: 95%;
+  }
+  
+  .portfolio-images .image-item {
+    height: 230px;
+    flex-basis: 100%;
+  }
+  
+  .about img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+  .container {
+    max-width: 768px;
+  }
+  .portfolio-images .image-item {
+    flex-basis: 48%;
+  }
+}
+
+
+/* ----------------testowe tła---------------------- */
+div.image-item:nth-child(1) {
+  background-color: khaki;
+  /* background: url(img/portfolio/photo-1.jpg); */
+}
+div.image-item:nth-child(2) {
+background-color: lavender;
+}
+div.image-item:nth-child(3) {
+background-color: lawngreen;
+}
+div.image-item:nth-child(4) {
+background-color: lightblue;
+}
+div.image-item:nth-child(5) {
+background-color: lightcoral;
+}
+div.image-item:nth-child(6) {
+background-color: lightpink;
+}
+div.image-item:nth-child(7) {
+background-color: magenta;
+}
+div.image-item:nth-child(8) {
+background-color: mediumturquoise;
+}
+div.image-item:nth-child(9) {
+background-color: navy;
+}
+div.image-item:nth-child(10) {
+background-color: olive;
+}
+div.image-item:nth-child(11) {
+background-color: orangered;
+}
+div.image-item:nth-child(12) {
+background-color: peru;
+}
