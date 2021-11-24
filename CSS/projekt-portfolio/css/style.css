@@ -57,6 +57,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
 }
 
 .main-header .main-header-content {
