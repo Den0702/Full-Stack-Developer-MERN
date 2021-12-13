@@ -190,7 +190,7 @@ input[id="drop-nav"] {
   margin: 0;
   opacity: 0;
   font-weight: 400;
-  transition: opacity /* background-color */ /* color */ 1s;
+  transition: opacity 1s; /* Animujemy właściwość opacity, nie background color, czy color */
 }
 
 .portfolio-images .image-item h3:hover {
