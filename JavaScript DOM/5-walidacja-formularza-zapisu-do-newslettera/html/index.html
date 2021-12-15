@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warsztat – Walidacja formularza zapisu do Newsletter’a</title>
+</head>
+
+<body>
+  <ul id="error">
+  </ul>
+  <form action="" id="newsletter">
+    <label for="name">Imię i Nazwisko: <br>
+      <input type="text" name="name" id="name"><br>
+    </label>
+    <label for="email">Adres email: <br>
+      <input type="text" name="email" id="email"><br>
+    </label>
+    <label for="consent1">
+      Zgoda marketingowa 1
+      <input type="checkbox" name="consent1" id="consent1">
+    </label><br>
+    <label for="consent2">
+      Zgoda marketingowa 2
+      <input type="checkbox" name="consent2" id="consent2">
+    </label><br>
+    <label for="all-consents">
+      Wszystkie zgody
+      <input type="checkbox" name="all-consents" id="all-consents">
+    </label><br><br>
+
+    <input type="submit" value="WYSLIJ">
+  </form>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
