@@ -1,4 +1,4 @@
-/* Base styles */
+/*************** Base styles ******************/
 * {
   box-sizing: border-box;
 }
@@ -7,12 +7,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-section {
-  padding: 120px 0;
-}
-
 h1, h2 {
-  /* margin: 30em 0 0.67em 0; */
+    /* margin: 30em 0 0.67em 0; */
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
@@ -25,7 +21,7 @@ hr {
 }
 
 
-/* Utility styles*/
+/*********** Utility styles************/
 .btn {
   display: inline-block;
   border: 1px solid #007bff;
@@ -40,16 +36,19 @@ hr {
 }
 
 .btn:hover {
-  background-color: #007bff;
+    background-color: #007bff;
   color: #fff;
 }
 
 
-
 /***************Sitewide *****************/
 .container {
-  max-width: 1170px;
-  margin: auto;
+    max-width: 1170px;
+    margin: auto;
+}
+
+section {
+  padding: 120px 0;
 }
 /* Header styles*/
 .main-header {
@@ -144,7 +143,6 @@ footer {
   background-color: #f2f1ed;
   text-align: center;
 }
-/***************Sitewide *****************/
 
 
 /**********Sections**************/
@@ -174,6 +172,7 @@ footer {
 .portfolio-images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 5em 0; 
 }
 
@@ -190,7 +189,7 @@ footer {
 }
 
 .portfolio-images .image-item h3 {
-  position: absolute;/* Nakładamy nagłówek powyżej obrazka */
+  position: absolute;/* Trzeba nakładać nagłówek powyżej obrazka */
   top: 0;
   left: 0;
   width: 100%;/* Pozwoli ustawic background na wymiary calego kontenera */
@@ -250,9 +249,9 @@ footer {
 .social-media .social-link:hover {
   color: #777;
 }
-/**********Sections**************/
 
-/* Responsive styles */
+
+/********* Responsive styles ********/
 @media screen and (max-width: 479px) {
   .container {
     max-width: 95%;
